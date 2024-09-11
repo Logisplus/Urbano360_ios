@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ETrackingEntity" representedClassName="ETrackingEntity" syncable="YES">
+        <attribute name="codigoCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codigoRastreo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comentarioGestionGuia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionMotivo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionPaquete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destino" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccionEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccionEntregaGPSLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccionEntregaGPSLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dniDestinatarioEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailDestinatario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaAO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleDuration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleOriginLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleOriginLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleOverviewPolyline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guiaElectronica" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guiasEntregaPendiente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horaLlegadaAproximada" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horarioEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idDireccionEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGuia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idVisita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="importePorCobrar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lineaNegocio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localidadEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metodoPagoImporte" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreCourier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreDestinatario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreDestinatarioEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numVisita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="origen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referenciaDireccionEntrega" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reprogramacionPendiente" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="servicioOverNight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="servicioReprogramacion" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="servicioWeekEnd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="telefonosDestinatario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipoSeguimiento" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalPeso" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPiezas" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unidadGPSLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unidadGPSLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unidadPlaca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unidadTipo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlLogoRemitente" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fotosVisita" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FotosVisitaEntity" inverseName="eTracking" inverseEntity="FotosVisitaEntity" syncable="YES"/>
+        <relationship name="historialTransporte" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HistorialTransporteEntity" inverseName="eTracking" inverseEntity="HistorialTransporteEntity" syncable="YES"/>
+    </entity>
+    <entity name="FotosVisitaEntity" representedClassName="FotosVisitaEntity" syncable="YES">
+        <attribute name="gpsLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpsLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idVisita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgFechaHora" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgTipo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eTracking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ETrackingEntity" inverseName="fotosVisita" inverseEntity="ETrackingEntity" syncable="YES"/>
+    </entity>
+    <entity name="HistorialTransporteEntity" representedClassName="HistorialTransporteEntity" syncable="YES">
+        <attribute name="codigoCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionMovimiento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpsLatitudeMovimiento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpsLongitudeMovimiento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hora" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idVisita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motivoMovimiento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numVisita" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eTracking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ETrackingEntity" inverseName="historialTransporte" inverseEntity="ETrackingEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ETrackingEntity" positionX="-63" positionY="-18" width="128" height="838"/>
+        <element name="HistorialTransporteEntity" positionX="342" positionY="288" width="128" height="223"/>
+        <element name="FotosVisitaEntity" positionX="153" positionY="314" width="128" height="163"/>
+    </elements>
+</model>

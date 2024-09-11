@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bKD-la-Ybl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Retirar en tienda-->
+        <scene sceneID="QKP-FY-SAw">
+            <objects>
+                <viewController id="vwS-T8-4ik" customClass="RetirarEnTiendaViewController" customModule="Urbano" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IYt-Zg-jxO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-pO-Rhd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YKj-5H-1MT" firstAttribute="trailing" secondItem="zOf-pO-Rhd" secondAttribute="trailing" id="8bc-Zj-vDm"/>
+                            <constraint firstItem="zOf-pO-Rhd" firstAttribute="top" secondItem="YKj-5H-1MT" secondAttribute="top" id="SQr-vA-4Z5"/>
+                            <constraint firstItem="YKj-5H-1MT" firstAttribute="bottom" secondItem="zOf-pO-Rhd" secondAttribute="bottom" id="iAN-YG-rfh"/>
+                            <constraint firstItem="zOf-pO-Rhd" firstAttribute="leading" secondItem="YKj-5H-1MT" secondAttribute="leading" id="m15-yg-gLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YKj-5H-1MT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Retirar en tienda" id="Qyw-he-zCS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="oPO-nK-nyH">
+                            <connections>
+                                <action selector="cancelButtonDidTap:" destination="vwS-T8-4ik" id="6Cu-TA-MVJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="zOf-pO-Rhd" id="DZg-WL-e7M"/>
+                        <segue destination="36g-AM-NUP" kind="show" identifier="segueFromMapaToDetalle" id="enz-Vi-YDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCc-qf-ba0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="180"/>
+        </scene>
+        <!--Detalle Retirar En TiendaVC-->
+        <scene sceneID="hE1-nu-RGc">
+            <objects>
+                <tableViewController id="36g-AM-NUP" customClass="DetalleRetirarEnTiendaVC" customModule="Urbano" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jz8-dR-nCn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nym-Mh-VWF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nym-Mh-VWF" id="dga-S4-6wI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="36g-AM-NUP" id="2rb-Ld-VbC"/>
+                            <outlet property="delegate" destination="36g-AM-NUP" id="Mp5-zq-GOW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRc-TQ-YWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="180"/>
+        </scene>
+        <!--Default Navigation Controller-->
+        <scene sceneID="rIB-Db-7wi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bKD-la-Ybl" customClass="DefaultNavigationController" customModule="Urbano" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OUz-ET-JhT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vwS-T8-4ik" kind="relationship" relationship="rootViewController" id="HWz-ax-d5E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJE-qt-8i7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="180.35982008995504"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_UrbanoTests {
+  umbrella header "Pods-UrbanoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

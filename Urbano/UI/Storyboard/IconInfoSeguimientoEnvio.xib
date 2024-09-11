@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IconInfoSeguimientoEnvioView" customModule="Urbano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-KL-KQb">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-qW-JNF">
+                            <rect key="frame" x="3.5" y="3.5" width="13" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="Llg-CA-GCc"/>
+                                <constraint firstAttribute="width" constant="13" id="Npj-yp-aIF"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="HTN-GG-aFP"/>
+                        <constraint firstAttribute="width" constant="20" id="eQY-xk-PRR"/>
+                        <constraint firstItem="wyy-qW-JNF" firstAttribute="centerX" secondItem="v5D-KL-KQb" secondAttribute="centerX" id="qx1-Bh-rak"/>
+                        <constraint firstItem="wyy-qW-JNF" firstAttribute="centerY" secondItem="v5D-KL-KQb" secondAttribute="centerY" id="vth-cS-fBz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="v5D-KL-KQb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ark-HB-RM5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="v5D-KL-KQb" secondAttribute="bottom" id="aUT-8o-hOF"/>
+                <constraint firstItem="v5D-KL-KQb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b5j-sV-hgg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v5D-KL-KQb" secondAttribute="trailing" id="sE7-K1-kud"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundView" destination="v5D-KL-KQb" id="DGF-dn-NbF"/>
+                <outlet property="iconImage" destination="wyy-qW-JNF" id="m0t-g2-0bL"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AcercaDeTableViewCell" customModule="Urbano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhv-GM-2Kk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-1Q-Eyc">
+                            <rect key="frame" x="16" y="230.5" width="343" height="206.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urbano 360®" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-Te-OJa">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="26.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-aZ-khW">
+                                    <rect key="frame" x="0.0" y="31.5" width="343" height="18"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_urbano_color_80pt" translatesAutoresizingMaskIntoConstraints="NO" id="zQI-v7-HsM">
+                                    <rect key="frame" x="46.5" y="69.5" width="250" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="6IP-1s-P4J"/>
+                                        <constraint firstAttribute="width" constant="250" id="zRV-Rg-AlZ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2021 Urbano Holding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGr-vu-6vG">
+                                    <rect key="frame" x="0.0" y="169.5" width="343" height="16"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos los derechos reservados." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7z-zk-HnA">
+                                    <rect key="frame" x="0.0" y="190.5" width="343" height="16"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="zQI-v7-HsM" firstAttribute="centerX" secondItem="ujJ-1Q-Eyc" secondAttribute="centerX" id="9z5-oh-P66"/>
+                                <constraint firstAttribute="bottom" secondItem="O7z-zk-HnA" secondAttribute="bottom" id="CBe-lV-rtd"/>
+                                <constraint firstItem="O7z-zk-HnA" firstAttribute="top" secondItem="vGr-vu-6vG" secondAttribute="bottom" constant="5" id="DGc-ke-sK3"/>
+                                <constraint firstItem="O7z-zk-HnA" firstAttribute="leading" secondItem="ujJ-1Q-Eyc" secondAttribute="leading" id="Ftp-TY-Pc4"/>
+                                <constraint firstItem="g9t-aZ-khW" firstAttribute="top" secondItem="Zl6-Te-OJa" secondAttribute="bottom" constant="5" id="HM0-7I-ehG"/>
+                                <constraint firstItem="g9t-aZ-khW" firstAttribute="leading" secondItem="ujJ-1Q-Eyc" secondAttribute="leading" id="J8Q-QR-J7Q"/>
+                                <constraint firstAttribute="trailing" secondItem="O7z-zk-HnA" secondAttribute="trailing" id="Krf-1h-ez5"/>
+                                <constraint firstItem="vGr-vu-6vG" firstAttribute="leading" secondItem="ujJ-1Q-Eyc" secondAttribute="leading" id="TIX-gb-32h"/>
+                                <constraint firstItem="zQI-v7-HsM" firstAttribute="top" secondItem="g9t-aZ-khW" secondAttribute="bottom" constant="20" id="WT0-9f-yvc"/>
+                                <constraint firstAttribute="trailing" secondItem="Zl6-Te-OJa" secondAttribute="trailing" id="YQl-S7-H8J"/>
+                                <constraint firstAttribute="trailing" secondItem="vGr-vu-6vG" secondAttribute="trailing" id="YxQ-ck-qye"/>
+                                <constraint firstItem="vGr-vu-6vG" firstAttribute="top" secondItem="zQI-v7-HsM" secondAttribute="bottom" constant="20" id="beU-NC-LbY"/>
+                                <constraint firstItem="Zl6-Te-OJa" firstAttribute="leading" secondItem="ujJ-1Q-Eyc" secondAttribute="leading" id="c1j-uS-INF"/>
+                                <constraint firstItem="Zl6-Te-OJa" firstAttribute="top" secondItem="ujJ-1Q-Eyc" secondAttribute="top" id="fsH-pz-9Wq"/>
+                                <constraint firstAttribute="trailing" secondItem="g9t-aZ-khW" secondAttribute="trailing" id="uTg-xV-Xyq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ujJ-1Q-Eyc" secondAttribute="trailing" constant="16" id="KLd-aF-Zpe"/>
+                        <constraint firstItem="ujJ-1Q-Eyc" firstAttribute="centerY" secondItem="Mhv-GM-2Kk" secondAttribute="centerY" id="WuR-nM-2I2"/>
+                        <constraint firstItem="ujJ-1Q-Eyc" firstAttribute="leading" secondItem="Mhv-GM-2Kk" secondAttribute="leading" constant="16" id="uMu-k3-e98"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mhv-GM-2Kk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="45x-Er-76l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Mhv-GM-2Kk" secondAttribute="bottom" id="NHy-XO-89U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mhv-GM-2Kk" secondAttribute="trailing" id="faI-Mm-tN8"/>
+                <constraint firstItem="Mhv-GM-2Kk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ybL-sk-cGs"/>
+            </constraints>
+            <connections>
+                <outlet property="copyRightBLabel" destination="O7z-zk-HnA" id="3cN-0H-B8m"/>
+                <outlet property="copyRightLabel" destination="vGr-vu-6vG" id="Izd-uI-jjF"/>
+                <outlet property="nameAppLabel" destination="Zl6-Te-OJa" id="Sj7-os-2nE"/>
+                <outlet property="versionAppLabel" destination="g9t-aZ-khW" id="3Gg-Pv-ACB"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_logo_urbano_color_80pt" width="254.5" height="80"/>
+    </resources>
+</document>

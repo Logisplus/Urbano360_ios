@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HistorialTransitoTableViewHeader" customModule="Urbano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-V5-1Cs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-Ci-XfY">
+                            <rect key="frame" x="159" y="5" width="57.5" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-ih-DKl">
+                                    <rect key="frame" x="10" y="11.5" width="37.5" height="18"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <color key="textColor" red="0.89019607840000003" green="0.1019607843" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fa7-ih-DKl" firstAttribute="leading" secondItem="SWx-Ci-XfY" secondAttribute="leading" constant="10" id="P4c-ym-Hkq"/>
+                                <constraint firstAttribute="trailing" secondItem="fa7-ih-DKl" secondAttribute="trailing" constant="10" id="Tqx-Xe-DIA"/>
+                                <constraint firstItem="fa7-ih-DKl" firstAttribute="centerY" secondItem="SWx-Ci-XfY" secondAttribute="centerY" id="W2u-ag-Tis"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SWx-Ci-XfY" firstAttribute="top" secondItem="Epo-V5-1Cs" secondAttribute="top" constant="5" id="Ep5-ZT-Ttr"/>
+                        <constraint firstAttribute="bottom" secondItem="SWx-Ci-XfY" secondAttribute="bottom" constant="5" id="nYe-Te-UjD"/>
+                        <constraint firstItem="SWx-Ci-XfY" firstAttribute="centerX" secondItem="Epo-V5-1Cs" secondAttribute="centerX" id="xe8-V1-Mgq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Epo-V5-1Cs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Mc-hW-ofC"/>
+                <constraint firstItem="Epo-V5-1Cs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Wul-Gc-XJi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Epo-V5-1Cs" secondAttribute="bottom" id="i3W-fy-FVU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Epo-V5-1Cs" secondAttribute="trailing" id="txJ-Yw-jn0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="boxTitleView" destination="SWx-Ci-XfY" id="ScK-WA-gr1"/>
+                <outlet property="titleLabel" destination="fa7-ih-DKl" id="C98-z9-Qe2"/>
+            </connections>
+        </view>
+    </objects>
+</document>

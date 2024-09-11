@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CotizarEnvioTableViewCell" customModule="Urbano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1020"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lA1-Fu-yri">
+                    <rect key="frame" x="0.0" y="20" width="375" height="1000"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-Xu-7pD">
+                            <rect key="frame" x="16" y="954" width="343" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6K-nB-jte">
+                            <rect key="frame" x="16" y="16" width="343" height="922"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-cJ-LvZ">
+                                    <rect key="frame" x="16" y="446" width="311" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.1019607843" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="yAK-cJ-LvZ" firstAttribute="centerY" secondItem="u6K-nB-jte" secondAttribute="centerY" id="Plp-cb-w2k"/>
+                                <constraint firstItem="yAK-cJ-LvZ" firstAttribute="leading" secondItem="u6K-nB-jte" secondAttribute="leading" constant="16" id="TET-UT-crw"/>
+                                <constraint firstAttribute="trailing" secondItem="yAK-cJ-LvZ" secondAttribute="trailing" constant="16" id="kvY-Qo-3PB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.70980392160000005" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="u6K-nB-jte" firstAttribute="top" secondItem="lA1-Fu-yri" secondAttribute="top" constant="16" id="84Q-8z-1lP"/>
+                        <constraint firstItem="DF0-Xu-7pD" firstAttribute="top" secondItem="u6K-nB-jte" secondAttribute="bottom" constant="16" id="KDf-zp-v0l"/>
+                        <constraint firstItem="DF0-Xu-7pD" firstAttribute="leading" secondItem="lA1-Fu-yri" secondAttribute="leading" constant="16" id="RcI-3A-Vgg"/>
+                        <constraint firstItem="u6K-nB-jte" firstAttribute="leading" secondItem="lA1-Fu-yri" secondAttribute="leading" constant="16" id="TZc-WN-6AH"/>
+                        <constraint firstAttribute="trailing" secondItem="DF0-Xu-7pD" secondAttribute="trailing" constant="16" id="VBw-WO-wbd"/>
+                        <constraint firstAttribute="bottom" secondItem="DF0-Xu-7pD" secondAttribute="bottom" constant="16" id="fhj-rr-IHT"/>
+                        <constraint firstAttribute="height" constant="1000" id="gut-4L-Udb"/>
+                        <constraint firstAttribute="trailing" secondItem="u6K-nB-jte" secondAttribute="trailing" constant="16" id="mud-yy-lvG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lA1-Fu-yri" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PoZ-fw-LLQ"/>
+                <constraint firstItem="lA1-Fu-yri" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Sj5-Si-3lA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lA1-Fu-yri" secondAttribute="trailing" id="WPc-oX-OqU"/>
+                <constraint firstAttribute="bottom" secondItem="lA1-Fu-yri" secondAttribute="bottom" id="a7O-TY-Kfq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
